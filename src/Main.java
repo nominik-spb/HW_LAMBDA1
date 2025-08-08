@@ -9,12 +9,12 @@ public class Main {
         int b = calc.minus.apply(1,1);
 
         // ошибка деления на ноль
-        // необходима проверка переменной b на равенство 0
+        // необходима проверка возможности вычисления
         try {
             int c = calc.devide.apply(a, b);
             calc.println.accept(c);
         } catch (Exception ex) {
-            System.out.println("Вычисление невозможно, т.к. деление на ноль");
+            System.out.println("Вычисление невозможно из-за несоответствия одного из параметров");
         }
     }
 }
